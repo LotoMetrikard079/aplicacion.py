@@ -33,15 +33,20 @@ if menu == "Inicio":
 
 elif menu == "Históricos":
 
+    import os
+
     st.title("Históricos")
 
-    df = pd.read_csv("historicos.csv")
+    st.write("Ruta actual:")
+    st.write(os.getcwd())
 
-    st.success("Históricos cargados correctamente")
+    st.write("Archivos visibles:")
+    st.write(os.listdir("."))
 
-    st.write(f"Total de sorteos registrados: {len(df)}")
-
-    st.dataframe(df, use_container_width=True)
+    if os.path.exists("historicos.csv"):
+        st.success("✅ historicos.csv encontrado")
+    else:
+        st.error("❌ historicos.csv NO encontrado")
 elif menu == "Estadísticas":
 
     st.title("Estadísticas")
