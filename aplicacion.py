@@ -39,7 +39,13 @@ elif menu == "Históricos":
 
     st.write("Archivos visibles:")
 
-    st.write(os.listdir("."))
+    import os
+
+st.write("Ruta actual:")
+st.write(os.getcwd())
+
+st.write("Archivos visibles:")
+st.write(os.listdir("."))
 
     
 
