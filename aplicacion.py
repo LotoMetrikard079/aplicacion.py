@@ -37,7 +37,7 @@ elif menu == "Históricos":
 
     try:
 
-        df = pd.read_csv("historicos.csv")
+        st.write("Prueba de lectura de archivo")
 
         st.success("Históricos cargados correctamente")
 
