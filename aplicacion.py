@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 
 st.set_page_config(
     page_title="LOTOMETRIKA RD",
@@ -30,13 +31,23 @@ if menu == "Inicio":
 
     st.write("Versión 1.0 - Infraestructura inicial operativa")
 
-
 elif menu == "Históricos":
 
     st.title("Históricos")
 
-    st.write("Próximamente se cargarán los históricos de loterías.")
+    try:
 
+        df = pd.read_csv("historicos.csv")
+
+        st.success("Históricos cargados correctamente")
+
+        st.write(f"Total de sorteos registrados: {len(df)}")
+
+        st.dataframe(df, use_container_width=True)
+
+    except Exception as e:
+
+        st.error(f"Error al cargar históricos: {e}")
 
 elif menu == "Estadísticas":
 
@@ -44,13 +55,11 @@ elif menu == "Estadísticas":
 
     st.write("Módulo estadístico en construcción.")
 
-
 elif menu == "Predicciones":
 
     st.title("Predicciones")
 
     st.write("Motor predictivo en construcción.")
-
 
 elif menu == "Configuración":
 
