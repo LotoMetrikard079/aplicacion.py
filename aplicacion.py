@@ -37,19 +37,11 @@ elif menu == "Históricos":
 
     st.title("Históricos")
 
+    st.write("Ruta actual:")
+    st.write(os.getcwd())
+
     st.write("Archivos visibles:")
-
-    import os
-
-st.write("Ruta actual:")
-st.write(os.getcwd())
-
-st.write("Archivos visibles:")
-st.write(os.listdir("."))
-
-    
-
-        
+    st.write(os.listdir("."))
 elif menu == "Estadísticas":
 
     st.title("Estadísticas")
