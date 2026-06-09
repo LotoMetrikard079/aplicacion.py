@@ -41,20 +41,9 @@ elif menu == "Históricos":
 
     st.write(os.listdir("."))
 
-    try:
+    
 
-        st.write("Prueba de lectura de archivo")
-
-        st.success("Históricos cargados correctamente")
-
-        st.write(f"Total de sorteos registrados: {len(df)}")
-
-        st.dataframe(df, use_container_width=True)
-
-    except Exception as e:
-
-        st.error(f"Error al cargar históricos: {e}")
-
+        
 elif menu == "Estadísticas":
 
     st.title("Estadísticas")
