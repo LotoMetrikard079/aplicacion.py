@@ -46,7 +46,24 @@ elif menu == "Estadísticas":
 
     st.title("Estadísticas")
 
-    st.write("Módulo estadístico en construcción.")
+    df = pd.read_csv("historicos.csv")
+
+    st.write(f"Total de sorteos: {len(df)}")
+
+    numeros = pd.concat([
+        df["primero"],
+        df["segundo"],
+        df["tercero"]
+    ])
+
+    frecuencia = numeros.value_counts()
+
+    st.subheader("Top 10 números más frecuentes")
+
+    st.dataframe(
+        frecuencia.head(10).reset_index(),
+        use_container_width=True
+    )
 
 elif menu == "Predicciones":
 
