@@ -33,7 +33,13 @@ if menu == "Inicio":
 
 elif menu == "Históricos":
 
+    import os
+
     st.title("Históricos")
+
+    st.write("Archivos visibles:")
+
+    st.write(os.listdir("."))
 
     try:
 
