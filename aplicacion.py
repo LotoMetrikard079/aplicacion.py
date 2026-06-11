@@ -57,6 +57,19 @@ elif menu == "Estadísticas":
     ])
 
     frecuencia = numeros.value_counts()
+    numero_caliente = frecuencia.index[0]
+    apariciones_caliente = frecuencia.iloc[0]
+
+    numero_frio = frecuencia.index[-1]
+    apariciones_frio = frecuencia.iloc[-1]
+
+    st.success(
+        f"🔥 Número más frecuente: {numero_caliente} ({apariciones_caliente} apariciones)"
+    )
+
+    st.info(
+        f"❄️ Número menos frecuente: {numero_frio} ({apariciones_frio} apariciones)"
+    )
 
     st.subheader("Top 10 números más frecuentes")
 
