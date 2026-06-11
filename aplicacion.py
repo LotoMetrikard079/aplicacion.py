@@ -64,6 +64,12 @@ elif menu == "Estadísticas":
         frecuencia.head(10).reset_index(),
         use_container_width=True
     )
+    st.subheader("Distribución por lotería")
+
+    st.dataframe(
+        df["loteria"].value_counts().reset_index(),
+        use_container_width=True
+    )
 
 elif menu == "Predicciones":
 
