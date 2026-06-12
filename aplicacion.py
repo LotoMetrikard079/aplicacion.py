@@ -73,6 +73,7 @@ elif menu == "Estadísticas":
 
     st.subheader("Top 10 números más frecuentes")
     st.subheader("🔥 Top 5 números calientes")
+    st.subheader("❄️ Top 5 números fríos")
 
     st.dataframe(
         frecuencia.head(5).reset_index(),
