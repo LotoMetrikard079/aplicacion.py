@@ -72,6 +72,12 @@ elif menu == "Estadísticas":
     )
 
     st.subheader("Top 10 números más frecuentes")
+    st.subheader("🔥 Top 5 números calientes")
+
+st.dataframe(
+    frecuencia.head(5).reset_index(),
+    use_container_width=True
+)
 
     st.dataframe(
         frecuencia.head(10).reset_index(),
