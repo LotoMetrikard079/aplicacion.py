@@ -134,4 +134,31 @@ Primary Module:
 
 aplicacion.py
 
+Governance Rules
+LOTOMETRIKA RD operates under a controlled governance framework designed to ensure data integrity, reproducibility and traceability.
+
+RULE-VAL-003: REGIME_BOUNDARY_THRESHOLD
+The system shall classify the Inter-Cycle Distance Index (IDI) using fixed empirical operational boundaries.
+
+Classification Ranges:
+
+IDI < 35.00 → CONTRACTION
+35.00 <= IDI <= 55.00 → EQUILIBRIUM
+IDI > 55.00 → EXPANSION
+These classifications are descriptive observations of historical datasets and shall not be interpreted as predictive probabilities.
+
+RULE-GOV-004: STATUS_BASED_CLOSURE_LAW
+Daily certification and consolidation processes remain open until all active lottery entities within the observation universe have published stable and verified results.
+
+Time-based execution windows are operational references only and do not replace result verification.
+
+Data Integrity Principles
+The platform enforces:
+
+Metadata validation
+Duplicate prevention
+Controlled ingestion
+Audit traceability
+Historical preservation
+All modifications must preserve reproducibility and historical consistency.
 
