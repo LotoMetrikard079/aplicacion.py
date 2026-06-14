@@ -59,3 +59,79 @@ LOTOMETRIKA RD prioritizes:
 
 All analytical outputs must be interpreted as descriptive observations of historical data.
 
+
+
+
+System Architecture
+The LOTOMETRIKA RD platform follows a controlled analytical pipeline.
+
+Processing Flow
+Historical Dataset
+
+↓
+
+Validation Layer
+
+↓
+
+Classification Layer
+
+↓
+
+Audit Layer
+
+↓
+
+Streamlit Visualization
+
+Component Description
+Historical Dataset
+Primary storage source containing historical lottery records.
+
+Current File:
+
+historicos.csv
+
+Validation Layer
+Responsible for:
+
+Data normalization
+Metadata verification
+Lottery-shift validation
+Range validation
+Duplicate prevention
+Primary Module:
+
+validator.py
+
+Classification Layer
+Responsible for:
+
+IDI descriptive classification
+Regime determination
+Threshold enforcement
+Primary Module:
+
+classifier.py
+
+Audit Layer
+Responsible for:
+
+Transaction traceability
+Event logging
+Governance support
+Future Module:
+
+logger.py
+
+Visualization Layer
+Responsible for:
+
+User interaction
+Data presentation
+Analytical dashboards
+Primary Module:
+
+aplicacion.py
+
+
