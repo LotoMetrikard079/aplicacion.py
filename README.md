@@ -45,6 +45,10 @@ lotometrika-rd/
 
 ├── requirements.txt
 
+├── docs/
+│   ├── archived_debug_notes.md
+│   └── future_architecture.md
+
 ---
 
 Project Philosophy
