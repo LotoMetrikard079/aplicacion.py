@@ -18,7 +18,28 @@ The following concepts remain archived and are NOT part of the current productio
 - Classifier Layer
 - Research Metrics Isolation Ledger
 - Extended Multi-Layer Data Architecture
+# LOTOMETRIKA RD - Future Architecture
 
+## Purpose
+
+This document stores future architectural proposals, experimental designs, and planned infrastructure expansions.
+
+Only validated and approved components should be migrated into production.
+
+---
+
+## Pending Components
+
+- Validator Module
+- Classifier Module
+- Audit Log System
+- Batch Loader
+- Research Metrics Layer
+- Automated Testing Framework
+
+---
+
+Status: Draft
 These components remain under review and shall not be considered active production modules until formally approved and implemented.
 
 Status: ARCHIVED FOR FUTURE REVIEW
