@@ -36,18 +36,18 @@ Repository Structure
 lotometrika-rd/
 
 ├── README.md
-
 ├── BACKUP_LOTOMETRIKA_RD_V1.0.txt
-
 ├── aplicacion.py
-
 ├── historicos.csv
-
 ├── requirements.txt
 
 ├── docs/
 │   ├── archived_debug_notes.md
 │   └── future_architecture.md
+
+├── data/
+├── logs/
+└── tests/
 ## Current Repository Baseline (June 2026)
 
 Current operational files:
