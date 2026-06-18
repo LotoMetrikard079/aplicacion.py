@@ -48,7 +48,34 @@ lotometrika-rd/
 ├── docs/
 │   ├── archived_debug_notes.md
 │   └── future_architecture.md
+## Current Repository Baseline (June 2026)
 
+Current operational files:
+
+- README.md
+- BACKUP_LOTOMETRIKA_RD_V1.0.txt
+- aplicacion.py
+- historicos.csv
+- requirements.txt
+
+Documentation:
+
+- docs/future_architecture.md
+- docs/archived_debug_notes.md
+
+Current Status:
+
+- Streamlit application operational
+- Historical dataset connected
+- Initial repository structure stabilized
+- Documentation phase in progress
+
+Next Planned Stage:
+
+- Create data directory
+- Create logs directory
+- Create core directory
+- Create tests directory
 ---
 
 Project Philosophy
