@@ -35,7 +35,14 @@ elif menu == "Históricos":
 
     st.title("Históricos")
 
-    df = pd.read_csv("historicos.csv")
+    df = pd.read_csv(
+    "historicos.csv",
+    dtype={
+        "primero": str,
+        "segundo": str,
+        "tercero": str
+    }
+)
 
     st.success("✅ Históricos cargados correctamente")
 
@@ -46,7 +53,14 @@ elif menu == "Estadísticas":
 
     st.title("Estadísticas")
 
-    df = pd.read_csv("historicos.csv")
+    df = pd.read_csv(
+    "historicos.csv",
+    dtype={
+        "primero": str,
+        "segundo": str,
+        "tercero": str
+    }
+)
 
     st.write(f"Total de sorteos: {len(df)}")
 
